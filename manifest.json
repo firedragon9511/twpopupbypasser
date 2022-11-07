@@ -1,0 +1,20 @@
+{
+    "name": "Twitter Login PopUp Bypasser",
+    "permissions": ["activeTab"],
+    "version": "1.0.0",
+    "description": "With this extension enabled you can bypass the Twitter login popup, thus not needing to login to view profile tweets and comments.",
+    "manifest_version": 3,
+    "author": "firedragon9511",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Twitter Login PopUp Bypasser"
+    },
+
+
+    "content_scripts": [
+        {
+          "matches": ["https://*.twitter.com/*"],
+          "js": ["content.js"]
+        }
+      ]
+}
