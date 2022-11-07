@@ -1,3 +1,7 @@
+/**
+ * by firedragon9511
+ */
+
 setInterval(() => {
     if(document.documentElement.style["overflow-y"] == "hidden"){
         document.documentElement.style["overflow-y"] = "scroll";
